@@ -501,4 +501,7 @@
   <data name="LogoutCommand" xml:space="preserve">
     <value>Log off</value>
   </data>
+  <data name="CustomerDetailView_Salutation" xml:space="preserve">
+    <value>Salutation</value>
+  </data>
 </root>

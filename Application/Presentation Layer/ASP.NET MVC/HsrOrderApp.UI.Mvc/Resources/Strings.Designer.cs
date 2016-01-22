@@ -295,6 +295,15 @@ namespace HsrOrderApp.UI.Mvc.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Anrede.
+        /// </summary>
+        public static string CustomerDetailView_Salutation {
+            get {
+                return ResourceManager.GetString("CustomerDetailView_Salutation", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Adressen.
         /// </summary>
         public static string CustomerDetailView_Subtitle {
