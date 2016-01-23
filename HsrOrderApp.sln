@@ -19,6 +19,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WPF", "WPF", "{127172F0-179
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{977D02C8-6C5E-4804-A0DF-1A4527630C41}"
 	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
 		HsrOrderApp.vsmdi = HsrOrderApp.vsmdi
 		LocalTestRun.testrunconfig = LocalTestRun.testrunconfig
 	EndProjectSection
