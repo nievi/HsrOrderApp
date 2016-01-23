@@ -2,6 +2,7 @@
 
 using HsrOrderApp.SharedLibraries.DTO;
 using HsrOrderApp.UI.WPF.Properties;
+using HsrOrderApp.UI.WPF.ViewModels.Address;
 using HsrOrderApp.UI.WPF.ViewModels.Base;
 
 #endregion

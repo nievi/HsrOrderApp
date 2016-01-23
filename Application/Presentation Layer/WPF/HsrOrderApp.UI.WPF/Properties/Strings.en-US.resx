@@ -408,4 +408,34 @@
   <data name="CustomerDetailView_Salutation" xml:space="preserve">
     <value>Salutation</value>
   </data>
+  <data name="ProductConditionDetailViewModel_DisplayName" xml:space="preserve">
+    <value>Edit product condition</value>
+  </data>
+  <data name="ProductConditionViewModel_DisplayName" xml:space="preserve">
+    <value>Administrate customers product conditions</value>
+  </data>
+  <data name="String1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="SupplierDetailViewModel_DisplayName" xml:space="preserve">
+    <value>Edit suppliers</value>
+  </data>
+  <data name="SupplierViewModel_DisplayName" xml:space="preserve">
+    <value>Product Condition Administration</value>
+  </data>
+  <data name="SupplierView_Active" xml:space="preserve">
+    <value>Active</value>
+  </data>
+  <data name="SupplierView_Description" xml:space="preserve">
+    <value>Administrate the suppliers</value>
+  </data>
+  <data name="SupplierView_DisplayName" xml:space="preserve">
+    <value>Supplier Administration</value>
+  </data>
+  <data name="SupplierView_Name" xml:space="preserve">
+    <value>Name (supplier account)</value>
+  </data>
+  <data name="SupplierView_URL" xml:space="preserve">
+    <value>Webservice URL</value>
+  </data>
 </root>

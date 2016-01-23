@@ -408,4 +408,31 @@
   <data name="CustomerDetailView_Salutation" xml:space="preserve">
     <value>Anrede</value>
   </data>
+  <data name="ProductConditionDetailViewModel_DisplayName" xml:space="preserve">
+    <value>Produkt-Lieferbedingung bearbeiten</value>
+  </data>
+  <data name="ProductConditionViewModel_DisplayName" xml:space="preserve">
+    <value>Produkt-Lieferbedingungen verwalten</value>
+  </data>
+  <data name="SupplierDetailViewModel_DisplayName" xml:space="preserve">
+    <value>Lieferanten bearbeiten</value>
+  </data>
+  <data name="SupplierViewModel_DisplayName" xml:space="preserve">
+    <value>Lieferanten-Administration</value>
+  </data>
+  <data name="SupplierView_Active" xml:space="preserve">
+    <value>Aktiv</value>
+  </data>
+  <data name="SupplierView_Description" xml:space="preserve">
+    <value>Bearbeiten Sie die Lieferanten</value>
+  </data>
+  <data name="SupplierView_DisplayName" xml:space="preserve">
+    <value>Lieferantenverwaltung</value>
+  </data>
+  <data name="SupplierView_Name" xml:space="preserve">
+    <value>Name (Lieferanten-Nummer)</value>
+  </data>
+  <data name="SupplierView_URL" xml:space="preserve">
+    <value>Webservice-Adresse</value>
+  </data>
 </root>

@@ -750,7 +750,7 @@
     </edmx:Options>
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram Name="HsrOrderApp" xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+      <Diagram Name="HsrOrderApp" xmlns="http://schemas.microsoft.com/ado/2008/10/edmx" ZoomLevel="197">
         <EntityTypeShape EntityType="HsrOrderAppModel.Address" Width="1.5" PointX="0.75" PointY="5" Height="2.9417936197916656" IsExpanded="true" />
         <EntityTypeShape EntityType="HsrOrderAppModel.Customer" Width="1.5" PointX="3" PointY="3.5" Height="2.3648893229166674" IsExpanded="true" />
         <EntityTypeShape EntityType="HsrOrderAppModel.OrderDetail" Width="1.5" PointX="7.5" PointY="6.5" Height="2.1725878906249987" IsExpanded="true" />

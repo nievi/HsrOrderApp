@@ -14,8 +14,6 @@ namespace HsrOrderApp.SharedLibraries.DTO {
     private decimal _standardPrice;
     private decimal? _lastReceiptCost;
     private DateTime? _lastReceiptDate;
-    private string _phone;
-    private string _postalCode;
     private int? _minOrderQty;
     private int? _maxOrderQty;
 

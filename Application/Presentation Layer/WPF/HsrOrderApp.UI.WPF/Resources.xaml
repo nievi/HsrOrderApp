@@ -8,7 +8,7 @@
         <WPF:MainWindow  />
     </DataTemplate>
     <DataTemplate DataType="{x:Type vm:Customer.CustomerViewModel}">
-        <vw:CustomerView  />
+        <vw:SupplierView  />
     </DataTemplate>
     <DataTemplate DataType="{x:Type vm:Order.OrderViewModel}">
         <vw:OrderView  />

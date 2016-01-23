@@ -682,6 +682,24 @@ namespace HsrOrderApp.UI.WPF.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Produkt-Lieferbedingung bearbeiten.
+        /// </summary>
+        public static string ProductConditionDetailViewModel_DisplayName {
+            get {
+                return ResourceManager.GetString("ProductConditionDetailViewModel_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Produkt-Lieferbedingungen verwalten.
+        /// </summary>
+        public static string ProductConditionViewModel_DisplayName {
+            get {
+                return ResourceManager.GetString("ProductConditionViewModel_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Kategorie.
         /// </summary>
         public static string ProductDetailView_Category {
@@ -822,6 +840,69 @@ namespace HsrOrderApp.UI.WPF.Properties {
         public static string SaveCommand {
             get {
                 return ResourceManager.GetString("SaveCommand", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Lieferanten bearbeiten.
+        /// </summary>
+        public static string SupplierDetailViewModel_DisplayName {
+            get {
+                return ResourceManager.GetString("SupplierDetailViewModel_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Aktiv.
+        /// </summary>
+        public static string SupplierView_Active {
+            get {
+                return ResourceManager.GetString("SupplierView_Active", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Bearbeiten Sie die Lieferanten.
+        /// </summary>
+        public static string SupplierView_Description {
+            get {
+                return ResourceManager.GetString("SupplierView_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Lieferantenverwaltung.
+        /// </summary>
+        public static string SupplierView_DisplayName {
+            get {
+                return ResourceManager.GetString("SupplierView_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Name (Lieferanten-Nummer).
+        /// </summary>
+        public static string SupplierView_Name {
+            get {
+                return ResourceManager.GetString("SupplierView_Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Webservice-Adresse.
+        /// </summary>
+        public static string SupplierView_URL {
+            get {
+                return ResourceManager.GetString("SupplierView_URL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Lieferanten-Administration.
+        /// </summary>
+        public static string SupplierViewModel_DisplayName {
+            get {
+                return ResourceManager.GetString("SupplierViewModel_DisplayName", resourceCulture);
             }
         }
         
