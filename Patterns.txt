@@ -1,0 +1,40 @@
+Patterns implementiert in Applikation (nicht in verwendeten Libraries) wobei wir die Pattern weggelassen haben, welche einfach beschreiben,
+wie man ein Problem löst, wie zum Beispiel "Exception Handling" oder "Composite"
+
+Abstract Factory
+Singleton 
+Factory Method
+Lazy initialization
+Adapter 
+Bridge
+Facade
+Observer 
+Interceptor (nützlich für Validation in Setters) 
+Proxy 
+Lock
+Data validation
+Transaction Script bzw. Unit of Work (zur Gewährleistung der Integrität/Konsistenz der Daten)
+Service Layer 
+MVVM
+DTO (Erweiterbarkeit, Kapselung, Coarse Grained Service)
+Data Access Object
+Domain Model
+Remote Facade
+Repository
+Mapper
+Layer Supertype
+Special Case
+Separated Interface
+Plugin
+Layers
+
+Verbesserungen
+- Reduktion von DTO bzw. Mappern
+- Ersetzen des Service Layer durch fehlertolerante Schicht (Webservice) für bessere Skalierbarkeit und Client-Variabiabiltät 
+- Plugin Pattern macht hier keinen Sinn, weil es die Entwicklung und Wartbarkeit kompliziert
+- Automapper zur Vereinfach des Codes und Veresserung der Wartbarkeit
+
+
+Table Module vs Domain Model
+TM nur für einfaches Datenmodell ohne/minimaler Business Logik
+Nachteil: Koppelung von Datenbank / Data Access / Business Logik
