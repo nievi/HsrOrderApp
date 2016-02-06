@@ -12,30 +12,45 @@ namespace HsrOrderApp.BL.DtoAdapters
 {
     public class AddressAdapter
     {
-        #region AddressToDTO
+    #region AddressToDTO
 
-        public static IList<AddressDTO> AddressToDtos(IQueryable<Address> addresses)
-        {
-            IQueryable<AddressDTO> addressDTOs = from a in addresses
-                                                 select new AddressDTO()
-                                                            {
-                                                                Id = a.AddressId,
-                                                                AddressLine1 = a.AddressLine1,
-                                                                AddressLine2 = a.AddressLine2,
-                                                                PostalCode = a.PostalCode,
-                                                                City = a.City,
-                                                                Phone = a.Phone,
-                                                                Email = a.Email,
-                                                                Version = a.Version
-                                                            };
-            return addressDTOs.ToList();
-        }
+    public static AddressDTO AddressToDto(Address address) {
+      var addressList = new List<Address>();
+      addressList.Add(address);
+      IQueryable<AddressDTO> addressDTOs = from a in addressList.AsQueryable()
+                                           select new AddressDTO() {
+                                             Id = a.AddressId,
+                                             AddressLine1 = a.AddressLine1,
+                                             AddressLine2 = a.AddressLine2,
+                                             PostalCode = a.PostalCode,
+                                             City = a.City,
+                                             Phone = a.Phone,
+                                             Email = a.Email,
+                                             Version = a.Version
+                                           };
+      return addressDTOs.First();
+    }
 
-        #endregion
+    public static IList<AddressDTO> AddressToDtos(IQueryable<Address> addresses) {
+      IQueryable<AddressDTO> addressDTOs = from a in addresses
+                                           select new AddressDTO() {
+                                             Id = a.AddressId,
+                                             AddressLine1 = a.AddressLine1,
+                                             AddressLine2 = a.AddressLine2,
+                                             PostalCode = a.PostalCode,
+                                             City = a.City,
+                                             Phone = a.Phone,
+                                             Email = a.Email,
+                                             Version = a.Version
+                                           };
+      return addressDTOs.ToList();
+    }
 
-        #region DTOToAddress
+    #endregion
 
-        public static Address DtoToAddress(AddressDTO dto)
+    #region DTOToAddress
+
+    public static Address DtoToAddress(AddressDTO dto)
         {
             Address address = new Address
                                   {

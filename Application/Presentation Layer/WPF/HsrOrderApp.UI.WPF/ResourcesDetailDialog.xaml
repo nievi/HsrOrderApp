@@ -28,8 +28,12 @@
     <vw:RoleDetail />
   </DataTemplate>
 
-  <DataTemplate  DataType="{x:Type vm:Customer.SupplierDetailViewModel}">
-    <vw:CustomerDetail  />
+  <DataTemplate  DataType="{x:Type vm:Supplier.SupplierViewModel}">
+    <vw:AddressDetail  />
+  </DataTemplate>
+
+  <DataTemplate  DataType="{x:Type vm:Supplier.SupplierDetailViewModel}">
+    <vw:SupplierDetail  />
   </DataTemplate>
 
 

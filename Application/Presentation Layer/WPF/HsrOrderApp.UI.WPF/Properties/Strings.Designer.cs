@@ -421,6 +421,15 @@ namespace HsrOrderApp.UI.WPF.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Lieferanten-Verwaltung.
+        /// </summary>
+        public static string MainWindow_hlkSupplier {
+            get {
+                return ResourceManager.GetString("MainWindow_hlkSupplier", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Benutzerverwaltung.
         /// </summary>
         public static string MainWindow_hlkUser {
@@ -844,6 +853,132 @@ namespace HsrOrderApp.UI.WPF.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Lieferantennummer.
+        /// </summary>
+        public static string SupplierDetailView_Accountnumber {
+            get {
+                return ResourceManager.GetString("SupplierDetailView_Accountnumber", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Aktiv.
+        /// </summary>
+        public static string SupplierDetailView_Active {
+            get {
+                return ResourceManager.GetString("SupplierDetailView_Active", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Durchschnittliche Lieferzeit.
+        /// </summary>
+        public static string SupplierDetailView_AverageLeadTime {
+            get {
+                return ResourceManager.GetString("SupplierDetailView_AverageLeadTime", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Kreditwürdigkeit.
+        /// </summary>
+        public static string SupplierDetailView_CreditRating {
+            get {
+                return ResourceManager.GetString("SupplierDetailView_CreditRating", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Letzter Preis.
+        /// </summary>
+        public static string SupplierDetailView_LastReceiptCost {
+            get {
+                return ResourceManager.GetString("SupplierDetailView_LastReceiptCost", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Letztes Kaufdatum.
+        /// </summary>
+        public static string SupplierDetailView_LastReceiptDate {
+            get {
+                return ResourceManager.GetString("SupplierDetailView_LastReceiptDate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Maximale Bestellmenge.
+        /// </summary>
+        public static string SupplierDetailView_MaxOrderQty {
+            get {
+                return ResourceManager.GetString("SupplierDetailView_MaxOrderQty", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Minimale Bestellmenge.
+        /// </summary>
+        public static string SupplierDetailView_MinOrderQty {
+            get {
+                return ResourceManager.GetString("SupplierDetailView_MinOrderQty", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Name.
+        /// </summary>
+        public static string SupplierDetailView_Name {
+            get {
+                return ResourceManager.GetString("SupplierDetailView_Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Bevorzugter Lieferant.
+        /// </summary>
+        public static string SupplierDetailView_PreferredSupplier {
+            get {
+                return ResourceManager.GetString("SupplierDetailView_PreferredSupplier", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Standard Preis.
+        /// </summary>
+        public static string SupplierDetailView_StandardPrice {
+            get {
+                return ResourceManager.GetString("SupplierDetailView_StandardPrice", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Produkt-Konditionen.
+        /// </summary>
+        public static string SupplierDetailView_Subtitle {
+            get {
+                return ResourceManager.GetString("SupplierDetailView_Subtitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Lieferant.
+        /// </summary>
+        public static string SupplierDetailView_Title {
+            get {
+                return ResourceManager.GetString("SupplierDetailView_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Webservice URL.
+        /// </summary>
+        public static string SupplierDetailView_WebserviceURL {
+            get {
+                return ResourceManager.GetString("SupplierDetailView_WebserviceURL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Lieferanten bearbeiten.
         /// </summary>
         public static string SupplierDetailViewModel_DisplayName {
@@ -898,7 +1033,7 @@ namespace HsrOrderApp.UI.WPF.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Lieferanten-Administration.
+        ///   Looks up a localized string similar to Lieferanten-Verwaltung.
         /// </summary>
         public static string SupplierViewModel_DisplayName {
             get {

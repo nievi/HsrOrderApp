@@ -15,7 +15,7 @@ namespace HsrOrderApp.UI.WPF.ViewModels.Supplier {
 
     #endregion
 
-    public SupplierDetailViewModel(SupplierDTO customer, bool isNew) : base(customer, isNew) {
+    public SupplierDetailViewModel(SupplierDTO supplier, bool isNew) : base(supplier, isNew) {
       this.DisplayName = Strings.SupplierDetailViewModel_DisplayName;
     }
 

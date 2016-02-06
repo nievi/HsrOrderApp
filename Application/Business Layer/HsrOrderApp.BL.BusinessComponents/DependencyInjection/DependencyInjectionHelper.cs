@@ -9,78 +9,71 @@ using Microsoft.Practices.Unity.Configuration;
 
 #endregion
 
-namespace HsrOrderApp.BL.BusinessComponents.DependencyInjection
-{
-    public class DependencyInjectionHelper
-    {
-        private static IUnityContainer _unityContainer;
+namespace HsrOrderApp.BL.BusinessComponents.DependencyInjection {
+  public class DependencyInjectionHelper {
+    private static IUnityContainer _unityContainer;
 
-        public static IUnityConfigProvider ConfigProvider { get; set; }
+    public static IUnityConfigProvider ConfigProvider { get; set; }
 
-        [MethodImpl(MethodImplOptions.Synchronized)]
-        private static void SetUnityContainer()
-        {
-            if (_unityContainer == null)
-            {
-                _unityContainer = new UnityContainer();
+    [MethodImpl(MethodImplOptions.Synchronized)]
+    private static void SetUnityContainer() {
+      if (_unityContainer == null) {
+        _unityContainer = new UnityContainer();
 
-                if (ConfigProvider == null)
-                {
-                    ConfigProvider = new AppUnityConfigProvider();
-                }
-
-                var config = (UnityConfigurationSection)ConfigProvider.UnityConfiguration.GetSection("unity");
-                config.Containers[ConfigurationHelper.OrMapper.ToString()].Configure(_unityContainer);
-            }
+        if (ConfigProvider == null) {
+          ConfigProvider = new AppUnityConfigProvider();
         }
 
-        internal class AppUnityConfigProvider : IUnityConfigProvider
-        {
-            public Configuration UnityConfiguration
-            {
-                get
-                {
-                    ExeConfigurationFileMap map = new ExeConfigurationFileMap();
-                    map.ExeConfigFilename = "unity.config";
-                    return ConfigurationManager.OpenMappedExeConfiguration(map, ConfigurationUserLevel.None);
-                }
-            }
-        }
-
-        public static OrderBusinessComponent GetOrderBusinessComponent()
-        {
-            SetUnityContainer();
-            OrderBusinessComponent orderBc = _unityContainer.Resolve<OrderBusinessComponent>();
-            return orderBc;
-        }
-
-        public static CustomerBusinessComponent GetCustomerBusinessComponent()
-        {
-            SetUnityContainer();
-            CustomerBusinessComponent customerBC = _unityContainer.Resolve<CustomerBusinessComponent>();
-            return customerBC;
-        }
-        
-        public static ProductBusinessComponent GetProductBusinessComponent()
-        {
-            SetUnityContainer();
-            ProductBusinessComponent productBC = _unityContainer.Resolve<ProductBusinessComponent>();
-            return productBC;
-        }
-
-        public static SecurityBusinessComponent GetSecurityBusinessComponent()
-        {
-            SetUnityContainer();
-            SecurityBusinessComponent securityBC = _unityContainer.Resolve<SecurityBusinessComponent>();
-            return securityBC;
-        }
+        var config = (UnityConfigurationSection)ConfigProvider.UnityConfiguration.GetSection("unity");
+        config.Containers[ConfigurationHelper.OrMapper.ToString()].Configure(_unityContainer);
+      }
     }
 
-    public interface IUnityConfigProvider
-    {
-        Configuration UnityConfiguration { get; }
+    internal class AppUnityConfigProvider : IUnityConfigProvider {
+      public Configuration UnityConfiguration {
+        get {
+          ExeConfigurationFileMap map = new ExeConfigurationFileMap();
+          map.ExeConfigFilename = "unity.config";
+          return ConfigurationManager.OpenMappedExeConfiguration(map, ConfigurationUserLevel.None);
+        }
+      }
     }
 
-    
+    public static OrderBusinessComponent GetOrderBusinessComponent() {
+      SetUnityContainer();
+      OrderBusinessComponent orderBc = _unityContainer.Resolve<OrderBusinessComponent>();
+      return orderBc;
+    }
+
+    public static CustomerBusinessComponent GetCustomerBusinessComponent() {
+      SetUnityContainer();
+      CustomerBusinessComponent customerBC = _unityContainer.Resolve<CustomerBusinessComponent>();
+      return customerBC;
+    }
+
+    public static ProductBusinessComponent GetProductBusinessComponent() {
+      SetUnityContainer();
+      ProductBusinessComponent productBC = _unityContainer.Resolve<ProductBusinessComponent>();
+      return productBC;
+    }
+
+    public static SecurityBusinessComponent GetSecurityBusinessComponent() {
+      SetUnityContainer();
+      SecurityBusinessComponent securityBC = _unityContainer.Resolve<SecurityBusinessComponent>();
+      return securityBC;
+    }
+
+    public static SupplierBusinessComponent GetSupplierBusinessComponent() {
+      SetUnityContainer();
+      SupplierBusinessComponent supplierBC = _unityContainer.Resolve<SupplierBusinessComponent>();
+      return supplierBC;
+    }
+  }
+
+  public interface IUnityConfigProvider {
+    Configuration UnityConfiguration { get; }
+  }
+
+
 }
 

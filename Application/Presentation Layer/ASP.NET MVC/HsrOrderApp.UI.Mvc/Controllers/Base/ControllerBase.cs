@@ -98,7 +98,7 @@ namespace HsrOrderApp.UI.Mvc.Controllers.Base
 
         #region IDisposable Members
 
-        public void Dispose()
+        public new void Dispose()
         {
             _service?.Dispose();
         }

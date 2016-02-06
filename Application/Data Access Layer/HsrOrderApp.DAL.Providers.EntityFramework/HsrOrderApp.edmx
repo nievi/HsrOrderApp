@@ -98,7 +98,7 @@
           <Key>
             <PropertyRef Name="SupplierId" />
           </Key>
-          <Property Name="SupplierId" Type="int" Nullable="false" />
+          <Property Name="SupplierId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="AddressId" Type="int" Nullable="false" />
           <Property Name="AccountNumber" Type="int" Nullable="false" />
           <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
@@ -219,7 +219,9 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_Suppliers_Addresses">
-          <End Role="Addresses" Type="Self.Addresses" Multiplicity="1" />
+          <End Role="Addresses" Type="Self.Addresses" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
           <End Role="Suppliers" Type="Self.Suppliers" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Addresses">
@@ -750,7 +752,7 @@
     </edmx:Options>
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram Name="HsrOrderApp" xmlns="http://schemas.microsoft.com/ado/2008/10/edmx" ZoomLevel="197">
+      <Diagram Name="HsrOrderApp" xmlns="http://schemas.microsoft.com/ado/2008/10/edmx" ZoomLevel="83">
         <EntityTypeShape EntityType="HsrOrderAppModel.Address" Width="1.5" PointX="0.75" PointY="5" Height="2.9417936197916656" IsExpanded="true" />
         <EntityTypeShape EntityType="HsrOrderAppModel.Customer" Width="1.5" PointX="3" PointY="3.5" Height="2.3648893229166674" IsExpanded="true" />
         <EntityTypeShape EntityType="HsrOrderAppModel.OrderDetail" Width="1.5" PointX="7.5" PointY="6.5" Height="2.1725878906249987" IsExpanded="true" />

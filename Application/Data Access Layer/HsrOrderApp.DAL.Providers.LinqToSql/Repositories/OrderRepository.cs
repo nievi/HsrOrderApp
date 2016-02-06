@@ -40,7 +40,7 @@ namespace HsrOrderApp.DAL.Providers.LinqToSql.Repositories
 
                 return orders.First();
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 //if (ExceptionPolicy.HandleException(ex, "MissingEntity")) throw;
                 return new MissingOrder();

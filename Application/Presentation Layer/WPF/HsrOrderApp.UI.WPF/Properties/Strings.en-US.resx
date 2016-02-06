@@ -211,7 +211,7 @@
     <value>Load</value>
   </data>
   <data name="MainWindow_hlkCustomer" xml:space="preserve">
-    <value>Customer administration</value>
+    <value>Customer Administration</value>
   </data>
   <data name="MainWindow_hlkDE" xml:space="preserve">
     <value>DE</value>
@@ -220,13 +220,13 @@
     <value>EN</value>
   </data>
   <data name="MainWindow_hlkOrder" xml:space="preserve">
-    <value>Order administration</value>
+    <value>Order Administration</value>
   </data>
   <data name="MainWindow_hlkProduct" xml:space="preserve">
-    <value>Product administration</value>
+    <value>Product Administration</value>
   </data>
   <data name="MainWindow_hlkUser" xml:space="preserve">
-    <value>User administration</value>
+    <value>User Administration</value>
   </data>
   <data name="NewCommand" xml:space="preserve">
     <value>New</value>
@@ -436,6 +436,51 @@
     <value>Name (supplier account)</value>
   </data>
   <data name="SupplierView_URL" xml:space="preserve">
+    <value>Webservice URL</value>
+  </data>
+  <data name="MainWindow_hlkSupplier" xml:space="preserve">
+    <value>Supplier Administration</value>
+  </data>
+  <data name="SupplierDetailView_Accountnumber" xml:space="preserve">
+    <value>Accountnumber</value>
+  </data>
+  <data name="SupplierDetailView_Active" xml:space="preserve">
+    <value>Active</value>
+  </data>
+  <data name="SupplierDetailView_AverageLeadTime" xml:space="preserve">
+    <value>Average Leadtime</value>
+  </data>
+  <data name="SupplierDetailView_CreditRating" xml:space="preserve">
+    <value>CreditRating</value>
+  </data>
+  <data name="SupplierDetailView_LastReceiptCost" xml:space="preserve">
+    <value>Last Price</value>
+  </data>
+  <data name="SupplierDetailView_LastReceiptDate" xml:space="preserve">
+    <value>Last purchase date</value>
+  </data>
+  <data name="SupplierDetailView_MaxOrderQty" xml:space="preserve">
+    <value>Maximum order quantity</value>
+  </data>
+  <data name="SupplierDetailView_MinOrderQty" xml:space="preserve">
+    <value>Minimum order quantity</value>
+  </data>
+  <data name="SupplierDetailView_Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="SupplierDetailView_PreferredSupplier" xml:space="preserve">
+    <value>Preferred Supplier</value>
+  </data>
+  <data name="SupplierDetailView_StandardPrice" xml:space="preserve">
+    <value>Standard Price</value>
+  </data>
+  <data name="SupplierDetailView_Subtitle" xml:space="preserve">
+    <value>Product Conditions</value>
+  </data>
+  <data name="SupplierDetailView_Title" xml:space="preserve">
+    <value>Supplier</value>
+  </data>
+  <data name="SupplierDetailView_WebserviceURL" xml:space="preserve">
     <value>Webservice URL</value>
   </data>
 </root>

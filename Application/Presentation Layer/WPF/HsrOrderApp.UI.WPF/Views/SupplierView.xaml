@@ -4,8 +4,25 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:props="clr-namespace:HsrOrderApp.UI.WPF.Properties"
-             mc:Ignorable="d">
-    <Grid>
-    <TextBox Text="{x:Static props:Strings.SupplierView_DisplayName}"/>            
-    </Grid>
+    
+    mc:Ignorable="d"
+    >
+  <DockPanel>
+    <StackPanel DockPanel.Dock="Top">
+      <TextBlock Text="{x:Static props:Strings.SupplierView_DisplayName}" Height="50" Padding="20" Style="{StaticResource ViewTitle}"/>
+      <TextBlock Text="{x:Static props:Strings.SupplierView_Description}" Height="50" Margin="20 0 0 0"/>
+      <Menu Style="{StaticResource MenuStyle}" ItemsSource="{Binding Commands}" Height="25" />
+    </StackPanel>
+
+    <ListView x:Name="listView1" ItemsSource="{Binding Items}" SelectedItem="{Binding SelectedItem, Mode=TwoWay}">
+      <ListView.View>
+        <GridView>
+          <GridViewColumn Header="{x:Static props:Strings.SupplierView_Name}"  Width="200" DisplayMemberBinding="{Binding Name}"/>
+          <GridViewColumn Header="{x:Static props:Strings.SupplierView_Active}"  Width="150" DisplayMemberBinding="{Binding ActiveFlag}"/>
+          <GridViewColumn Header="{x:Static props:Strings.SupplierView_URL}"  Width="150" DisplayMemberBinding="{Binding PurchasingWebServiceURL}"/>
+        </GridView>
+      </ListView.View>
+    </ListView>
+
+  </DockPanel>
 </UserControl>

@@ -15,5 +15,6 @@ namespace HsrOrderApp.DAL.Data.Repositories {
 
     void DeleteSupplier(int id);
     void DeleteProductCondition(int id);
+    void SaveAddress(Address address);
   }
 }

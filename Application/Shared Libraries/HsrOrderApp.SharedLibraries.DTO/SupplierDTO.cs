@@ -12,7 +12,7 @@ namespace HsrOrderApp.SharedLibraries.DTO {
   public class SupplierDTO : DTOParentObject {
     private string _name;
     private int _accountNumber;
-    private int _creditRating;
+    private int? _creditRating;
     private bool _preferredSupplierFlag;
     private bool _activeFlag;
     private string _purchasingWebServiceURL;
@@ -26,7 +26,7 @@ namespace HsrOrderApp.SharedLibraries.DTO {
       this.PreferredSupplierFlag = false;
       this.ActiveFlag = true;
       this.PurchasingWebServiceURL = string.Empty;
-      this.Address = null;
+      this.Address = new AddressDTO();
       this.ProductConditions = new List<SupplierProductConditionDTO>();
     }
 
@@ -55,8 +55,9 @@ namespace HsrOrderApp.SharedLibraries.DTO {
     }
 
     [DataMember]
-    [NotNullValidator]
-    public int CreditRating {
+    [IgnoreNulls]
+    [RangeValidator(1, RangeBoundaryType.Inclusive, 5, RangeBoundaryType.Inclusive)]
+    public int? CreditRating {
       get { return _creditRating; }
       set {
         if (value != _creditRating) {
@@ -126,5 +127,37 @@ namespace HsrOrderApp.SharedLibraries.DTO {
         }
       }
     }
+
+    #region Address access
+
+    public string AddressLine1 {
+      get { return Address.AddressLine1; }
+      set { Address.AddressLine1 = value; }
+    }
+    public string AddressLine2 {
+      get { return Address.AddressLine2; }
+      set { Address.AddressLine2 = value; }
+    }
+
+    public string PostalCode {
+      get { return Address.PostalCode; }
+      set { Address.PostalCode = value; }
+    }
+
+    public string City {
+      get { return Address.City; }
+      set { Address.City = value; }
+    }
+
+    public string Phone {
+      get { return Address.Phone; }
+      set { Address.Phone = value; }
+    }
+
+    public string Email {
+      get { return Address.Email; }
+      set { Address.Email = value; }
+    }
+    #endregion
   }
 }

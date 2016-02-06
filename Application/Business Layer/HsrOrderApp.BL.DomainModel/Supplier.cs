@@ -29,6 +29,7 @@ namespace HsrOrderApp.BL.DomainModel {
     [RangeValidator(0, RangeBoundaryType.Inclusive, int.MaxValue, RangeBoundaryType.Inclusive)]
     public int AccountNumber { get; set; }
 
+    [IgnoreNulls]
     [RangeValidator(1, RangeBoundaryType.Inclusive, 5, RangeBoundaryType.Inclusive)]
     public int? CreditRating { get; set; }
 

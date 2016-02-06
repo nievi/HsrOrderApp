@@ -24,7 +24,6 @@ namespace SL.CustomerService
     [AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Required)]
     class CustomerService : ICustomerService
     {
-        private AdminService _adminService;
         public CustomerService()
         {
            
